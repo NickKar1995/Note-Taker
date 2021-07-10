@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Note Taker App</title>
+  <!-- Imports and stuff -->
+  <script src="index.js" defer charset="utf-8"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  		<div class="container-fluid">
+  			<a class="navbar-brand">My Notes</a>
+  			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  				<span class="navbar-toggler-icon"></span>
+  			</button>
+  			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  				<form class="d-flex">
+  					<input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+  				</form>
+  			</div>
+  		</div>
+  	</nav>
+
+
+  <div class="container">
+    <div class="card text-dark bg-light">
+      <div class="card-body">
+        Write a note
+        <br>
+        <textarea id="addNote" name="name" rows="8" cols="80"></textarea>
+        <br>
+        <button id="addBtn" class="btn btn-primary" type="button" name="button">Add</button>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div id="noMatches" class="row-container-fluid">
+
+  </div>
+
+  <div id="notes" class="row-container-fluid">
+
+  </div>
+
+</body>
+
+</html>
